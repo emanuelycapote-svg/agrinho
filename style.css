@@ -1,0 +1,129 @@
+/* Configurações Gerais e Cores Dreamcore */
+:root {
+    --cor-fundo: #1a1e15; /* Verde muito escuro, quase preto */
+    --cor-neon-verde: #39ff14;
+    --cor-terra: #8b5a2b;
+    --cor-alerta: #ff3333;
+    --fonte-dream: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: #e0e0e0;
+    font-family: var(--fonte-dream);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000'); /* Altere para uma imagem de floresta com névoa se quiser */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Efeito de chiado de TV antiga (Dreamcore/Weirdcore aesthetic) */
+.overlay-ruido {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px double var(--cor-alerta);
+}
+
+header h1 {
+    color: var(--cor-alerta);
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 0px rgba(255, 0, 0, 0.3);
+}
+
+.subtitulo {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: rgba(20, 25, 20, 0.9);
+    border: 2px solid #444;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease;
+}
+
+/* Estilo do Brasil em Ruínas */
+.cenario-ruinas {
+    border-left: 8px solid var(--cor-alerta);
+}
+
+.espaco-imagem {
+    background: #333;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--cor-alerta);
+    margin-top: 20px;
+}
+
+.texto-limbo {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Estilo do Futuro Sustentável */
+.cenario-futuro {
+    border-left: 8px solid var(--cor-neon-verde);
+}
+
+/* Botão Interativo */
+button {
+    background: transparent;
+    color: var(--cor-neon-verde);
+    border: 2px solid var(--cor-neon-verde);
+    padding: 12px 24px;
+    font-family: var(--fonte-dream);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px rgba(57, 255, 20, 0.2);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--cor-neon-verde);
+    color: #000;
+    box-shadow: 0px 0px 15px var(--cor-neon-verde);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    font-size: 0.8rem;
+    color: #555;
+    border-top: 1px solid #222;
+}
